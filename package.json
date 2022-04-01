@@ -1,0 +1,40 @@
+{
+  "name": "@stdlib/math-strided-special-rsqrt",
+  "version": "0.0.0",
+  "description": "Compute the reciprocal square root for each element in a strided array.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-strided-special-rsqrt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "trig",
+    "trigonometry",
+    "math.sqrt",
+    "sqrt",
+    "principal",
+    "square",
+    "root",
+    "power",
+    "reciprocal",
+    "inverse",
+    "vector",
+    "array",
+    "strided",
+    "ndarray",
+    "element-wise"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
