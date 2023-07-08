@@ -31,7 +31,7 @@ The reciprocal of the principal [square root][@stdlib/math/base/special/rsqrt] i
 <!-- <equation class="equation" label="eq:reciprocal_square_root" align="center" raw="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" alt="Reciprocal square root"> -->
 
 ```math
-\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}
+\mathop{\mathrm{rsqrt}}(x)=\frac{1}{\sqrt{x}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{rsqrt}(x)=\frac{1}{\sqrt{x}}" data-equation="eq:reciprocal_square_root">
@@ -45,38 +45,30 @@ The reciprocal of the principal [square root][@stdlib/math/base/special/rsqrt] i
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-strided-special-rsqrt
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-rsqrt = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-rsqrt@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var rsqrt = require( 'path/to/vendor/umd/math-strided-special-rsqrt/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-rsqrt@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.rsqrt;
-})();
-</script>
+var rsqrt = require( '@stdlib/math-strided-special-rsqrt' );
 ```
 
 #### rsqrt( N, dtypeX, x, strideX, dtypeY, y, strideY )
@@ -179,13 +171,8 @@ rsqrt.ndarray( 3, 'float64', x, 2, 1, 'float64', y, -1, y.length-1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {.factory;
+```javascript
+var uniform = require( '@stdlib/random-base-uniform' ).factory;
 var filledarray = require( '@stdlib/array-filled' );
 var filledarrayBy = require( '@stdlib/array-filled-by' );
 var dtypes = require( '@stdlib/array-dtypes' );
@@ -208,11 +195,6 @@ for ( i = 0; i < dt.length; i++ ) {
     console.log( y );
     console.log( '' );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -298,9 +280,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/math/base/special/rsqrt]: https://github.com/stdlib-js/math-base-special-rsqrt/tree/umd
+[@stdlib/math/base/special/rsqrt]: https://github.com/stdlib-js/math-base-special-rsqrt
 
-[@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided-dtypes/tree/umd
+[@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided-dtypes
 
 </section>
 
