@@ -63,7 +63,7 @@ The reciprocal of the principal [square root][@stdlib/math/base/special/rsqrt] i
 ## Usage
 
 ```javascript
-import rsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-rsqrt@deno/mod.js';
+import rsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-rsqrt@v0.1.0-deno/mod.js';
 ```
 
 #### rsqrt( N, dtypeX, x, strideX, dtypeY, y, strideY )
@@ -171,7 +171,7 @@ var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-unifor
 import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import rsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-rsqrt@deno/mod.js';
+import rsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-rsqrt@v0.1.0-deno/mod.js';
 
 var dt;
 var x;
